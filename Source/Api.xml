@@ -1,0 +1,306 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Source</name>
+    </assembly>
+    <members>
+        <member name="M:Source.Controllers.AmbienteController.GetAll">
+            <summary>
+            Lista todos os Ambientes
+            </summary>
+            <response code="200">Dados dos Ambientes</response>   
+            <response code="401">Não autorizado</response>        
+        </member>
+        <member name="M:Source.Controllers.AmbienteController.Get(System.Int32)">
+            <summary>
+            Lista apenas o Ambiente informado
+            </summary>
+            <response code="200">Dados do Ambiente</response>
+            <response code="401">Não autorizado</response>        
+            <response code="404">Ambiente não encontrado</response>        
+        </member>
+        <member name="M:Source.Controllers.AmbienteController.Inserir(Source.DTOs.AmbienteDTO)">
+            <summary>
+            Inclui um novo Ambiente
+            </summary>
+            <response code="201">Ambiente criado</response>
+            <response code="400">Os dados informados são inválidos</response>        
+            <response code="401">Não autorizado</response>        
+        </member>
+        <member name="M:Source.Controllers.AmbienteController.Alterar(Source.DTOs.AmbienteDTO)">
+            <summary>
+            Modifica um Ambiente
+            </summary>
+            <response code="200">Dados do Ambiente alterados com sucesso</response>
+            <response code="400">Os dados informados são inválidos</response>
+            <response code="401">Não autorizado</response>        
+            <response code="404">Ambiente não encontrado</response>        
+        </member>
+        <member name="M:Source.Controllers.AmbienteController.Remover(System.Int32)">
+            <summary>
+            Remove o Ambiente informado
+            </summary>
+            <response code="204">Ambiente removido com sucesso</response>        
+            <response code="401">Não autorizado</response>        
+            <response code="404">Ambiente não encontrado</response>
+        </member>
+        <member name="M:Source.Controllers.LogController.Get(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{Source.Services.ILogServiceOrdenacao})">
+            <summary>
+            Lista os Logs
+            </summary>
+            <param name="ordenacao">
+            1 = Tipo de Log         
+            2 = Eventos</param>
+            <response code="200">Dados dos Logs</response>   
+            <response code="401">Não autorizado</response>        
+        </member>
+        <member name="M:Source.Controllers.LogController.Get(System.Int32)">
+            <summary>
+            Lista apenas o Log informado
+            </summary>
+            <response code="200">Dados do Log</response>
+            <response code="401">Não autorizado</response>        
+            <response code="404">Log não encontrado</response>        
+        </member>
+        <member name="M:Source.Controllers.LogController.Inserir(Source.DTOs.LogInserirDTO)">
+            <summary>
+            Inclui um novo Log
+            </summary>
+            <response code="201">Log criado</response>
+            <response code="400">Os dados informados são inválidos</response>        
+            <response code="401">Não autorizado</response>        
+        </member>
+        <member name="M:Source.Controllers.LogController.Remover(System.Int32)">
+            <summary>
+            Remove o Log informado
+            </summary>
+            <response code="204">Log removido com sucesso</response>        
+            <response code="401">Não autorizado</response>                
+        </member>
+        <member name="M:Source.Controllers.LogController.Arquivar(System.Int32)">
+            <summary>
+            Arquiva o Log informado
+            </summary>
+            <response code="204">Log arquivado com sucesso</response>        
+            <response code="401">Não autorizado</response>                
+        </member>
+        <member name="M:Source.Controllers.TipoLogController.GetAll">
+            <summary>
+            Lista todos os Tipos de Log
+            </summary>
+            <response code="200">Dados dos Tipos de Log</response>   
+            <response code="401">Não autorizado</response>        
+        </member>
+        <member name="M:Source.Controllers.TipoLogController.Get(System.Int32)">
+            <summary>
+            Lista apenas o Tipo de Log informado
+            </summary>
+            <response code="200">Dados do Tipo de Log</response>
+            <response code="401">Não autorizado</response>        
+            <response code="404">Tipo de Log não encontrado</response>        
+        </member>
+        <member name="M:Source.Controllers.TipoLogController.Inserir(Source.DTOs.TipoLogDTO)">
+            <summary>
+            Inclui um novo Tipo de Log
+            </summary>
+            <response code="201">Tipo de Log criado</response>
+            <response code="400">Os dados informados são inválidos</response>        
+            <response code="401">Não autorizado</response>        
+        </member>
+        <member name="M:Source.Controllers.TipoLogController.Alterar(Source.DTOs.TipoLogDTO)">
+            <summary>
+            Modifica um Tipo de Log
+            </summary>
+            <response code="200">Dados do Tipo de Log alterados com sucesso</response>
+            <response code="400">Os dados informados são inválidos</response>
+            <response code="401">Não autorizado</response>        
+            <response code="404">Tipo de Log não encontrado</response>        
+        </member>
+        <member name="M:Source.Controllers.TipoLogController.Remover(System.Int32)">
+            <summary>
+            Remove o Tipo de Log informado
+            </summary>
+            <response code="204">Tipo de Log removido com sucesso</response>        
+            <response code="401">Não autorizado</response>        
+            <response code="404">Tipo de Log não encontrado</response>
+        </member>
+        <member name="M:Source.Controllers.UsuarioController.GetAll">
+            <summary>
+            Lista todos os Usuarios
+            </summary>
+            <response code="200">Dados dos Usuários</response>        
+            <response code="401">Não autorizado</response>        
+        </member>
+        <member name="M:Source.Controllers.UsuarioController.Get(System.Int32)">
+            <summary>
+            Lista apenas o Usuário informado
+            </summary>
+            <response code="200">Dados do Usuário</response>
+            <response code="401">Não autorizado</response>        
+            <response code="404">Usuário não encontrado</response>        
+        </member>
+        <member name="M:Source.Controllers.UsuarioController.Inserir(Source.DTOs.UsuarioDTO)">
+            <summary>
+            Inclui um novo Usuário
+            </summary>
+            <response code="201">Usuário criado</response>
+            <response code="400">Os dados informados são inválidos</response>                
+        </member>
+        <member name="M:Source.Controllers.UsuarioController.Alterar(Source.DTOs.UsuarioDTO)">
+            <summary>
+            Modifica um Usuário
+            </summary>
+            <response code="200">Dados do Usuário alterados com sucesso</response>
+            <response code="400">Os dados informados são inválidos</response>
+            <response code="401">Não autorizado</response>        
+            <response code="404">Usuário não encontrado</response>        
+        </member>
+        <member name="M:Source.Controllers.UsuarioController.Remover(System.Int32)">
+            <summary>
+            Remove o Usuário informado
+            </summary>
+            <response code="204">Usuário removido com sucesso</response>   
+            <response code="401">Não autorizado</response>        
+            <response code="404">Usuário não encontrado</response>
+        </member>
+        <member name="M:Source.Controllers.UsuarioController.Login(Source.DTOs.UsuarioLoginDTO)">
+            <summary>
+            Realiza login
+            </summary>
+            <response code="200">Login realizado</response>
+            <response code="400">Os dados informados são inválidos</response>                 
+            <response code="401">Login não autorizado</response>
+        </member>
+        <member name="P:Source.DTOs.AmbienteDTO.Id">
+            <summary>
+            Id gerado automaticamente pela API
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:Source.DTOs.AmbienteDTO.Titulo">
+            <summary>
+            Título descricionário
+            </summary>
+            <example>Produção</example>
+        </member>
+        <member name="P:Source.DTOs.LogDTO.Arquivado">
+            <summary>
+            Flag de arquivado
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:Source.DTOs.LogDTO.UsuarioId">
+            <summary>
+            Id do usuário que registrou o log
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:Source.DTOs.LogDTO.Usuario">
+            <summary>
+            E-mail do usuário que registrou o log
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:Source.DTOs.LogDTO.Ambiente">
+            <summary>
+            Título do ambiente onde o log foi registrado
+            </summary>
+            <example>Produção</example>
+        </member>
+        <member name="P:Source.DTOs.LogDTO.Tipo">
+            <summary>
+            Título do Tipo do Log
+            </summary>
+            <example>Error</example>
+        </member>
+        <member name="P:Source.DTOs.LogInserirDTO.Id">
+            <summary>
+            Id gerado automaticamente pela API
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:Source.DTOs.LogInserirDTO.Origem">
+            <summary>
+            Origem do log
+            </summary>
+            <example>127.0.0.1</example>
+        </member>
+        <member name="P:Source.DTOs.LogInserirDTO.Data">
+            <summary>
+            Data do log
+            </summary>        
+        </member>
+        <member name="P:Source.DTOs.LogInserirDTO.Titulo">
+            <summary>
+            Título do log
+            </summary>
+            <example>Stack Overflow</example>
+        </member>
+        <member name="P:Source.DTOs.LogInserirDTO.Detalhes">
+            <summary>
+            Detalhes do log
+            </summary>
+            <example>Unhlandled exception at 0x00435917 in MeuApp.exe</example>
+        </member>
+        <member name="P:Source.DTOs.LogInserirDTO.Eventos">
+            <summary>
+            Frequëncia do log
+            </summary>
+            <example>100</example>
+        </member>
+        <member name="P:Source.DTOs.LogInserirDTO.TipoId">
+            <summary>
+            Id do Tipo do Log
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:Source.DTOs.LogInserirDTO.AmbienteId">
+            <summary>
+            Id do Ambiente
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:Source.DTOs.TipoLogDTO.Id">
+            <summary>
+            Id gerado automaticamente pela API
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:Source.DTOs.TipoLogDTO.Titulo">
+            <summary>
+            Título descricionário
+            </summary>
+            <example>Warning</example>
+        </member>
+        <member name="P:Source.DTOs.UsuarioDTO.Id">
+            <summary>
+            Id gerado automaticamente pela API
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:Source.DTOs.UsuarioDTO.Email">
+            <summary>
+            E-mail do usuário
+            </summary>
+            <example>rodrigo@mail.com.br</example>
+        </member>
+        <member name="P:Source.DTOs.UsuarioDTO.Senha">
+            <summary>
+            Senha do usuário
+            </summary>
+            <example>123456</example>
+        </member>
+        <member name="P:Source.DTOs.UsuarioLoginDTO.Email">
+            <summary>
+            E-mail do usuário
+            </summary>
+            <example>rodrigo_leonhardt@hotmail.com</example>
+        </member>
+        <member name="P:Source.DTOs.UsuarioLoginDTO.Senha">
+            <summary>
+            Senha do usuário
+            </summary>
+            <example>123456</example>
+        </member>
+    </members>
+</doc>
