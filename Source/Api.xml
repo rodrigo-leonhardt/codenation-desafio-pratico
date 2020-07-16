@@ -50,7 +50,8 @@
             </summary>
             <param name="ordenacao">
             1 = Tipo de Log         
-            2 = Eventos</param>
+            2 = Eventos
+            </param>
             <response code="200">Dados dos Logs</response>   
             <response code="401">Não autorizado</response>        
         </member>
